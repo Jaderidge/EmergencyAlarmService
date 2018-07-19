@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/edtSuId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:minWidth="240dp"
+        android:singleLine="true"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+    
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtSuName"
+        android:hint="NAME"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/edtSuId"
+        app:layout_constraintLeft_toLeftOf="@id/edtSuId"
+        android:minWidth="240dp"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtSuPassword"
+        app:layout_constraintTop_toBottomOf="@id/edtSuName"
+        app:layout_constraintLeft_toLeftOf="@id/edtSuId"
+        android:hint="PASSWORD"
+        android:textSize="24sp"
+        android:minWidth="240dp"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtSuPasswordRe"
+        app:layout_constraintTop_toBottomOf="@id/edtSuPassword"
+        app:layout_constraintLeft_toLeftOf="@id/edtSuId"
+        android:hint="RE : PASSWORD"
+        android:textSize="24sp"
+        android:minWidth="240dp"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtSuMail"
+        app:layout_constraintTop_toBottomOf="@id/edtSuPasswordRe"
+        app:layout_constraintLeft_toLeftOf="@id/edtSuId"
+        android:hint="E-Mail"
+        android:textSize="24sp"
+        android:minWidth="240dp"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSuCheck"
+        app:layout_constraintLeft_toRightOf="@id/edtSuId"
+        app:layout_constraintTop_toTopOf="@id/edtSuId"
+        android:text="Check" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSuRegister"
+        app:layout_constraintLeft_toLeftOf="@id/edtSuId"
+        app:layout_constraintTop_toBottomOf="@id/edtSuMail"
+        app:layout_constraintRight_toRightOf="@id/edtSuId"
+        android:layout_marginTop="40dp"
+        android:text="Register"/>
+
+</android.support.constraint.ConstraintLayout>
